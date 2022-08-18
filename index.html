@@ -21,12 +21,12 @@
                     <h1>scandi</h1>
                 </div>
                 <ul class="page-navigation">
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Портфолио</a></li>
-                    <li><a href="#">Команда</a></li>
-                    <li><a href="#">Как мы работаем</a></li>
-                    <li><a href="#">Отзывы клиентов</a></li>
-                    <li><a href="#">Оставить заявку</a></li>
+                    <li><a href="#about-us">О компании</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#how-we-work">Как мы работаем</a></li>
+                    <li><a href="#reviews">Отзывы клиентов</a></li>
+                    <li><a href="#sign-up">Оставить заявку</a></li>
                 </ul>
                 <a href="tel:+79818574624" class="nav-tel">+7 (981) 857-46-24</a>
             </nav>
@@ -38,7 +38,7 @@
         </div>
     </header>
     <main>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <div class="container">
                 <h1 class="about-us-title">О нас</h1>
                 <div class="about-us-content">
@@ -73,7 +73,7 @@
             </div>
 
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <h1 class="portfolio-title">Наши работы</h1>
                 <div class="portfolio-inner">
@@ -115,7 +115,7 @@
                 </a>
             </div>
         </section>
-        <section class="team">
+        <section class="team" id="team">
             <div class="container">
                 <h1 class="team-title">Команда</h1>
                 <div class="team-inner">
@@ -139,7 +139,7 @@
                 </div>
             </div>
         </section>
-        <section class="how-we-work">
+        <section class="how-we-work" id="how-we-work">
             <div class="container">
                 <h1 class="how-we-work-title">Как мы работаем</h1>
                 <div class="how-we-work-inner">
@@ -166,7 +166,7 @@
                 </div>
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews"> 
             <div class="container">
                 <h1 class="reviews-title">отзывы</h1>
                 <div class="reviews-inner">
@@ -185,26 +185,27 @@
                 </div>
             </div>
         </section>
-        <section class="sign-up">
-            <div class="container">
+        <section class="sign-up" id="sign-up">
+            <div class="container sign-up-inner">
                 <div class="form">
-                    <h1></h1>
-                    <p></p>
+                    <h1 class="sign-up-title">оставить заявку</h1>
+                    <p class="sign-up-text">Оставьте свои контакты. Менеджер перезвонит
+                        в удобное вам время и ответит на все вопросы.</p>
                     <form action="">
-                        <input type="text" placeholder="">
-                        <input type="tel" placeholder="">
-                        <button></button>
+                        <input type="text" id="name" placeholder="Ваше имя">
+                        <input type="tel" id="phone" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Введите телефон">
+                        <button>Оставить заявку</button>
                     </form>
                 </div>
-                <div class="map"><img src="" alt=""></div>
+                <div class="map"><img src="images/sign-up.jpg" alt="Google map."></div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="tel:+7 (981) 857-46-24">+7 (981) 857-46-24</a>
+            <a href="#">г. Санкт-петербург, ул. Большая Конюшенная, 19</a>
+            <a href="#">ИП Королёва А.А.</a>
         </div>
     </footer>
 </body>
