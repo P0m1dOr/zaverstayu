@@ -13,9 +13,9 @@ body {
 }
 
 ul {
-    list-style: none;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 a {
@@ -25,7 +25,7 @@ a {
 /*header*/
 
 .header {
-    background: url(images/bg1.jpg) no-repeat;
+    background: url("images/bg1.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -38,11 +38,11 @@ nav {
     display: flex;
 }
 
-.logo h1 {
+.logo p {
+    margin-top: 38px;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 400;
-    margin-top: 38px;
 }
 
 .logo img {
@@ -73,39 +73,39 @@ nav {
 }
 
 .header-title {
+    margin-left: 85px;
+    margin-top: 120px;
     font-size: 50px;
     line-height: 62px;
     font-weight: 400;
     color: #533738;
-    margin-left: 85px;
-    margin-top: 120px;
 }
 
 .header-text {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
     margin-left: 85px;
     margin-top: 50px;
     margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
 }
 
 .header-button {
-    padding: 24px 66px;
     display: inline-block;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: #CC8B86;
-    color: #533738;
     margin-left: 85px;
     margin-bottom: 168px;
+    padding: 24px 66px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #533738;
+    background-color: #cc8b86;
 }
 
 /*about us*/
 
 .about-us {
     padding-top: 65px;
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
 }
 
 .about-us-title {
@@ -139,7 +139,7 @@ nav {
 }
 
 .stats {
-    background-color: #8D7370;
+    background-color: #8d7370;
     
 }
 
@@ -150,16 +150,16 @@ nav {
     margin-left: 85px;
     margin-right: 85px;
     padding-bottom: 80px;
-    background-color: #8D7370;
-    color: #fff;
+    background-color: #8d7370;
+    color: #ffffff;
     text-align: center;
 }
 
 .stats span {
+    margin-bottom: 8px;
     font-size: 50px;
     font-weight: 400;
     line-height: 62px;
-    margin-bottom: 8px;
 }
 
 .stats p {
@@ -171,18 +171,18 @@ nav {
 /*portfolio*/
 
 .portfolio {
-    background-color: #E5E5E5;
     padding-top: 65px;
     padding-bottom: 65px;
+    background-color: #e5e5e5;
 }
 
 .portfolio-title {
+    margin-bottom: 40px;
     text-transform: uppercase;
     color: #533738;
     font-size: 40px;
     font-weight: 400;
     line-height: 50px;
-    margin-bottom: 40px;
     text-align: left;
 
 }
@@ -208,96 +208,96 @@ nav {
     opacity: 0;
 }
 
-.works:hover .mask,
-.works:hover .portfolio-content {
-    opacity: 1;
-    transition: 0.5s linear;
-}
-
-.first-work {
-    background: url(images/first-work.jpg) no-repeat;
-    background-size: cover;
-    width: 488px;
-    height: 451px;
-}
-
-.second-work {
-    background: url(images/second-work.jpg) no-repeat;
-    background-size: cover;
-    width: 692px;
-    height: 451px;
-}
-
-.third-work {
-    background: url(images/third-work.jpg) no-repeat;
-    background-size: cover;
-    width: 692px;
-    height: 451px;
-}
-
-.forth-work {
-    background: url(images/forth-work.jpg) no-repeat;
-    background-size: cover;
-    width: 488px;
-    height: 451px;
-}
-
-.portfolio-content {
+.visually-hidden {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     opacity: 0;
 }
 
-.portfolio-content h1 {
+.visually-hidden h2 {
+    margin-top: 86px;
     font-size: 30px;
     font-weight: 500;
     text-align: center;
-    color: #fff;
-    margin-top: 86px;
+    color: #ffffff;
     
 }
 
-.portfolio-content p {
+.visually-hidden p {
     display: block;
+    margin: 35px;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #fff;
-    margin: 35px;
+    color: #ffffff;
 }
+
+.works:hover .mask,
+.works:hover .visually-hidden {
+    opacity: 1;
+    transition: 0.5s linear;
+}
+
+.first-work {
+    width: 488px;
+    height: 451px;
+    background: url("images/first-work.jpg") no-repeat;
+    background-size: cover;
+}
+
+.second-work {
+    width: 692px;
+    height: 451px;
+    background: url("images/second-work.jpg") no-repeat;
+    background-size: cover;
+}
+
+.third-work {
+    width: 692px;
+    height: 451px;
+    background: url("images/third-work.jpg") no-repeat;
+    background-size: cover;
+}
+
+.forth-work {
+    width: 488px;
+    height: 451px;
+    background: url("images/forth-work.jpg") no-repeat;
+    background-size: cover;
+}
+
 
 .button-inner {
     display: flex;
+    justify-content: center;
     font-size: 30px;
     font-weight: 500;
     line-height: 37px;
     color: #533738;
-    justify-content: center;
     
 }
 
 .button-inner p {
-    margin: 0;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
     
 }
 
 /*team*/
 
 .team {
-    background-color: #E2C4BA;
+    background-color: #e2c4ba;
 }
 
 .team-title {
+    padding-top: 50px;
+    margin-bottom: 42px;
+    margin-top: 0;
     text-transform: uppercase;
     text-align: center;
     font-size: 40px;
     font-weight: 400;
     line-height: 50px;
     color: #533738;
-    padding-top: 50px;
-    margin-bottom: 42px;
-    margin-top: 0;
 }
 
 .team-inner {
@@ -312,57 +312,57 @@ nav {
 }
 
 .team-item p {
+    margin-top: 10px;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     color: #533738;
-    margin-top: 10px;
 }
     
 /*how we work*/
 
 .how-we-work {
-    background-color: #E2C4BA;
+    background-color: #e2c4ba;
 }
 
 .how-we-work-title {
+    margin-bottom: 40px;
+    margin-top: 0;
     text-transform: uppercase;
     text-align: center; 
     color: #533738;
     font-size: 40px;
     font-weight: 400;
     line-height: 50px;
-    margin-bottom: 40px;
-    margin-top: 0;
 }
 
 .how-we-work-inner {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
     padding-bottom: 80px;
+    gap: 20px;
 }
 
 .how-we-work-item {
-    text-align: center;
     width: 285px;
+    text-align: center;
 }
 
 .how-we-work-item span {
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
     justify-content: center;
-    align-items: center;
     width: 70px;
     height: 70px;
-    border-radius: 50%;
-    background-color: #8D7370;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    align-items: center;
     font-size: 30px;
     line-height: 30px;
-    color: #fff;
+    color: #ffffff;
     font-weight: 500;
-    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #8d7370;
 }
 
 .how-we-work-item p {
@@ -375,9 +375,9 @@ nav {
 /*Reviews*/
 
 .reviews {
-    background-color: #E5E5E5;
     margin: 0;
     padding-top: 50px;
+    background-color: #e5e5e5;
 }
 
 .reviews-title {
@@ -401,14 +401,14 @@ nav {
 
 .reviews-button-next,
 .reviews-button-past {
-    content: '';
+    position: absolute;
+    top: 236px;
     width: 72px;
+    content: '';
     height: 72px;
     border-radius: 50%;
-    background: #CC8B86 url(images/Arrow2.svg) no-repeat 20px 27px;
-    position: absolute;
+    background: #cc8b86 url("images/Arrow2.svg") no-repeat 20px 27px;
     border: none;
-    top: 236px;
 
 }
 
@@ -458,7 +458,7 @@ nav {
 /*sign-up*/
 
 .sign-up {
-    background-color: #8D7370;
+    background-color: #8d7370;
     margin: 0;
     padding: 0;
 }
@@ -470,22 +470,22 @@ nav {
 }
 
 .sign-up-title {
+    margin-top: 50px;
+    margin-bottom: 24px;
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 400;
     line-height: 50px;
-    color: #fff;
-    margin-top: 50px;
-    margin-bottom: 24px;
+    color: #ffffff;
 }
 
 .sign-up-text {
+    margin-bottom: 44px;
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
-    color: #fff;
+    color: #ffffff;
     opacity: 0.6;
-    margin-bottom: 44px;
 }
 
 form {
@@ -496,19 +496,21 @@ form {
 
 input[type="text"],
 input[type="tel"] {
-    border: none;
-    background-color: #8D7370;
-    border-bottom: #F6EDE9 1px solid;
-    color: #F6EDE9;
     padding: 5px;
+    color: #f6ede9;
     line-height: 30px;
     font-size: 18px;
     font-weight: 400; 
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: #f6ede9 1px solid;
+    background-color: #8d7370;
 }
 
 input[type="text"]::placeholder,
 input[type="tel"]::placeholder {
-    color: #F6EDE9;
+    color: #f6ede9;
     font-size: 18px;
     font-weight: 400;
     
@@ -517,18 +519,18 @@ input[type="tel"]::placeholder {
 input[type="text"]:focus,
 input[type="tel"]:focus {
     border: none;
+    border-bottom: #f6ede9 1px solid;
     outline: 0;
-    border-bottom: #F6EDE9 1px solid;
 }
 
 form button {
     display: inline-block;
+    width: max-content;
+    padding: 25px 66px;
     color: #533738;
     font-size: 20px;
-    padding: 25px 66px;
-    background-color: #CC8B86;
+    background-color: #cc8b86;
     border: none;
-    width: max-content;
 }
 
 
@@ -539,16 +541,16 @@ form button {
 /*footer*/
 
 .footer {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
 }
 
 .footer-content {
     display: flex;
+    padding-top: 37px;
+    padding-bottom: 37px;
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
-    padding-top: 37px;
-    padding-bottom: 37px;
 }
 
 .footer-content a {
